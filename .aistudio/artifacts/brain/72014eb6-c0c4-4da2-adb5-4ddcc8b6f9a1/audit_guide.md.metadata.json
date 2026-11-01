@@ -1,0 +1,5 @@
+{
+  "summary":  "Comprehensive Code-Level Audit Guide for ORCHESTRA Stage 2 & Stage 3 codebase. Maps controlling documents (ORC-SAD-001, ORC-DTS-001, ORC-VVP-001, ADR-001-005) to concrete source code implementations, database schema, RLS policies, allowlisted tool registry, approval state machine with canonical SHA-256 hashing, and the 19 automated test suites. Explains how to download and inspect the 2.18 MB orchestra-stage2-repository.zip.",
+  "updatedAt":  "2026-11-01T10:21:11.615143220Z",
+  "userFacing":  true
+}

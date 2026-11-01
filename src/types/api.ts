@@ -49,6 +49,22 @@ export interface OrganizationDto {
   updated_at: string;
 }
 
+export interface WorkspaceDto {
+  id: string;
+  organization_id: string;
+  name: string;
+  slug: string;
+  description?: string;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface CreateWorkspaceInput {
+  name: string;
+  slug: string;
+  description?: string;
+}
+
 export interface UserDto {
   id: string;
   identity_subject: string;

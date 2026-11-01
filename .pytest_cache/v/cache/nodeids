@@ -1,0 +1,21 @@
+[
+  "tests/integration/test_api_endpoints.py::test_approval_lifecycle_via_api",
+  "tests/integration/test_api_endpoints.py::test_create_and_query_organization",
+  "tests/integration/test_api_endpoints.py::test_health_and_readiness_endpoints",
+  "tests/integration/test_api_endpoints.py::test_permission_denied_when_lacking_permission",
+  "tests/integration/test_api_endpoints.py::test_request_lifecycle_and_events",
+  "tests/integration/test_rotterdam_workflow.py::test_rotterdam_supplier_delay_complete_vertical_slice",
+  "tests/security/test_tenant_isolation.py::test_tenant_cannot_approve_or_modify_another_tenants_approvals",
+  "tests/security/test_tenant_isolation.py::test_tenant_cannot_list_another_tenants_requests",
+  "tests/security/test_tenant_isolation.py::test_tenant_cannot_read_another_tenants_requests",
+  "tests/security/test_tenant_isolation.py::test_workspace_isolation_across_tenants",
+  "tests/unit/test_approvals_statemachine.py::test_approval_lifecycle_and_transition_invariants",
+  "tests/unit/test_approvals_statemachine.py::test_canonical_payload_hashing_determinism",
+  "tests/unit/test_approvals_statemachine.py::test_expired_approval_rejection",
+  "tests/unit/test_approvals_statemachine.py::test_tamper_detection_on_execution",
+  "tests/unit/test_config_logging.py::test_context_vars",
+  "tests/unit/test_config_logging.py::test_settings_initialization",
+  "tests/unit/test_config_logging.py::test_structured_json_logging",
+  "tests/unit/test_temporal_workflow.py::test_supplier_investigation_end_to_end_flow",
+  "tests/unit/test_temporal_workflow.py::test_workflow_tamper_detection_halts_execution"
+]

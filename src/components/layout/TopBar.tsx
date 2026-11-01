@@ -10,7 +10,8 @@ import {
   RotateCcw,
   User,
   Sliders,
-  ExternalLink
+  ExternalLink,
+  Download
 } from 'lucide-react';
 import { useApp } from '../../context/AppContext';
 import { currentUser } from '../../data/mockData';
@@ -133,6 +134,18 @@ export const TopBar: React.FC = () => {
           )}
         </button>
 
+        {/* Download Source Code Archive for Audit */}
+        <a
+          href="/orchestra-stage2-repository.zip"
+          download="orchestra-stage2-repository.zip"
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-neutral-200/80 dark:border-neutral-800 bg-white dark:bg-[#161821] text-neutral-700 dark:text-neutral-300 text-xs font-medium hover:border-neutral-400 dark:hover:border-neutral-600 transition-all shadow-2xs shrink-0"
+          title="Download complete Stage 2 & Stage 3 codebase package (2.18 MB .zip) for audit"
+        >
+          <Download className="w-3.5 h-3.5 text-[#2F68F3]" />
+          <span className="hidden lg:inline">Download Source ZIP (2.18 MB)</span>
+          <span className="lg:hidden">Source ZIP</span>
+        </a>
+
         {/* Primary Action Button: Create Task */}
         <button
           onClick={() => setCreateTaskModalOpen(true)}
@@ -193,6 +206,15 @@ export const TopBar: React.FC = () => {
                   <User className="w-3.5 h-3.5 text-neutral-400" />
                   <span>Team Directory</span>
                 </button>
+                <a
+                  href="/orchestra-stage2-repository.zip"
+                  download="orchestra-stage2-repository.zip"
+                  onClick={() => setUserMenuOpen(false)}
+                  className="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs text-[#2F68F3] dark:text-[#5B8DF7] hover:bg-blue-50 dark:hover:bg-blue-950/40 transition-colors text-left"
+                >
+                  <Download className="w-3.5 h-3.5" />
+                  <span>Download Codebase (.zip)</span>
+                </a>
                 <button
                   onClick={() => {
                     resetToDefaults();
