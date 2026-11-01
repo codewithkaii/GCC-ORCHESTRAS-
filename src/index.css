@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, -apple-system-subheadline, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+:root {
+  --bg-primary: #F8F8F6;
+  --bg-card: #FFFFFF;
+  --text-primary: #121316;
+  --text-secondary: #6B7280;
+  --accent-blue: #2F68F3;
+  --accent-blue-hover: #2255D4;
+  --border-subtle: rgba(0, 0, 0, 0.07);
+}
+
+.dark {
+  --bg-primary: #0D0F14;
+  --bg-card: #151821;
+  --text-primary: #F3F4F6;
+  --text-secondary: #9CA3AF;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+}
+
+html {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11", "tnum";
+}
+
+html.dark {
+  background-color: #0D0F14;
+  color: #F3F4F6;
+}
+
+/* Apple-style text selections */
+::selection {
+  background-color: rgba(53, 109, 243, 0.2);
+  color: inherit;
+}
+
+/* Universal accessible subtle focus rings */
+:focus-visible {
+  outline: 2px solid #356DF3;
+  outline-offset: 2px;
+}
+
+/* Custom refined scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(140, 140, 140, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(140, 140, 140, 0.35);
+}
+

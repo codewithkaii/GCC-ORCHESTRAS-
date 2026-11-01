@@ -1,0 +1,6 @@
+{
+  "name": "ORCHESTRA — AI Business Operations Platform",
+  "description": "Autonomous AI operations platform for enterprise workflow coordination, record investigation, proactive resolution, and approval management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
